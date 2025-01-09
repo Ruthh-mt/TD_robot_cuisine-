@@ -10,13 +10,13 @@ public class Main {
         int quantite = clavier.nextInt();
         // initialisation de l'unité de l'ingredient
         System.out.println("Saisir l'unité de l'ingredient : ");
-        String unite = clavier.nextLine();
-        // instanciation de ma class
+        String unite = clavier.next();
+        // instantiation de ma class
         Ingredient monIngredient = new Ingredient(nom, quantite, unite);
         // affichage de la quantité, l'ingredient et l'unité
         System.out.println("la quantité est : " + monIngredient.getQuantite());
         System.out.println("Le nom de l'ingredient est : " + monIngredient.getNom());
-        System.out.println("la unite est : " + monIngredient.getUnite());
+        System.out.println("l' unite est : " + monIngredient.getUnite());
         // affichage de l'ingredient en entier
         System.out.println(monIngredient.afficher());
         //initialisation de la nouvelle quantité

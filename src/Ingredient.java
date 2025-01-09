@@ -14,22 +14,18 @@ public class Ingredient {
         return this.nom + " : " + this.quantite + " " + this.unite;
     }
     public String getNom(){
-
         return this.nom;
     }
 
     public int getQuantite(){
-
         return this.quantite;
     }
 
     public String getUnite(){
-
         return this.unite;
     }
 
     public int setQuantite(int nouvelleQuantite){
-
         return this.quantite = nouvelleQuantite;
     }
 
