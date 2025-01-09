@@ -3,14 +3,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner clavier = new Scanner(System.in);
         // initialisation du nom de l'ingredient
-        System.out.println("Saisir le nom de l'ingredient : ");
+        System.out.print("Saisir le nom de l'ingredient : ");
         String nom = clavier.nextLine();
         // initialisation de la quantité
-        System.out.println("Saisir la quantité de " + nom + " : ");
+        System.out.print("Saisir la quantité de " + nom + " : ");
         int quantite = clavier.nextInt();
+        clavier.skip("\n");
         // initialisation de l'unité de l'ingredient
-        System.out.println("Saisir l'unité de l'ingredient : ");
-        String unite = clavier.next();
+        System.out.print("Saisir l'unité de l'ingredient : ");
+        String unite = clavier.nextLine();
         // instantiation de ma class
         Ingredient monIngredient = new Ingredient(nom, quantite, unite);
         // affichage de la quantité, l'ingredient et l'unité
@@ -23,7 +24,7 @@ public class Main {
         System.out.println("Veuiller saisir une nouvelle quantité : ");
         int nouvelleQuantite= clavier.nextInt();
         monIngredient.setQuantite(nouvelleQuantite);
-        System.out.println("La nouvelle quantité est : " + monIngredient.afficher());
+        System.out.println("Mon ingredient avec la nouvelle quantité est : " + monIngredient.afficher());
 
 
 
